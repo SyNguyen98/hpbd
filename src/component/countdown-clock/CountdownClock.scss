@@ -1,0 +1,121 @@
+@use "../../assets/colors" as *;
+
+.countdown-card {
+  background-color: $blue-50;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  text-align: center;
+}
+
+.countdown-title {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #818cf8;
+  filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.07)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.06)); /* drop-shadow-lg */
+}
+
+@media (min-width: 768px) { /* md: */
+  .countdown-title {
+    font-size: 3rem; /* md:text-5xl */
+    line-height: 1;
+  }
+}
+
+.start-date-display {
+  font-size: 1.125rem; /* text-lg */
+  line-height: 1.75rem;
+  margin-bottom: 2rem; /* mb-8 */
+  color: #d1d5db; /* text-gray-300 */
+}
+
+@media (min-width: 768px) { /* md: */
+  .start-date-display {
+    font-size: 1.25rem; /* md:text-xl */
+    line-height: 1.75rem;
+  }
+}
+
+.time-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* grid-cols-2 */
+  gap: 1rem; /* gap-4 */
+}
+
+@media (min-width: 640px) { /* sm: */
+  .time-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr)); /* sm:grid-cols-5 */
+  }
+}
+
+.time-unit {
+  background-color: $cyan-50;
+  padding: 1rem; /* p-4 */
+  border-radius: 0.5rem; /* rounded-lg */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06); /* shadow-inner */
+}
+
+.time-value {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+}
+
+@media (min-width: 768px) { /* md: */
+  .time-value {
+    font-size: 2rem;
+    line-height: 1;
+  }
+}
+
+.time-label {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #9ca3af;
+  margin-top: 0.25rem;
+}
+
+@media (min-width: 768px) { /* md: */
+  .time-label {
+    font-size: 1rem; /* md:text-base */
+    line-height: 1.5rem;
+  }
+}
+
+/* Specific colors for each unit */
+.time-unit.years .time-value {
+  color: $green-500;
+}
+
+.time-unit.days .time-value {
+  color: $blue-500;
+}
+
+.time-unit.hours .time-value {
+  color: $purple-400;
+}
+
+.time-unit.minutes .time-value {
+  color: $red-500;
+}
+
+.time-unit.seconds .time-value {
+  color: $orange-500;
+}
+
+/* Adjust seconds unit for small screens to span 2 columns */
+.time-unit.seconds-span {
+  grid-column: span 2 / span 2;
+}
+
+@media (min-width: 640px) { /* sm: */
+  .time-unit.seconds-span {
+    grid-column: span 1 / span 1;
+  }
+}

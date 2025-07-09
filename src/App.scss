@@ -1,0 +1,44 @@
+@use "swiper/css" as *;
+@use "assets/colors" as *;
+@use "assets/font" as *;
+
+body {
+  font-family: 'GenshinFont', sans-serif;
+  background-color: #F5F5F5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 1rem;
+
+  @media (min-width: 640px) { // sm breakpoint
+    padding: 1.5rem;
+  }
+
+  @media (min-width: 768px) { // md breakpoint
+    padding: 2rem;
+  }
+}
+
+.main-container {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  padding: 1.5rem;
+
+  .divider {
+    margin: 2rem 0;
+    width: 100%;
+  }
+}
+
+.main-heading {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 800;
+  text-align: center;
+  color: black;
+  margin-bottom: 2rem;
+}

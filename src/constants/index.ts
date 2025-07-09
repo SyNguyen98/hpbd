@@ -1,0 +1,1 @@
+export const DAY_OF_BIRTH = '2000-07-12T15:45:00+07:00';
