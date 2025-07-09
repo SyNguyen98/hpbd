@@ -3,15 +3,15 @@ import {Autoplay} from "swiper/modules";
 
 type Props = {
     images: string[];
+    delay?: number;
 }
 
-function Carousel({images}: Props) {
+function Carousel({images, delay}: Props) {
     return (
         <Swiper spaceBetween={30}
-                slidesPerView={2}
                 centeredSlides={true}
                 autoplay={{
-                    delay: 2000,
+                    delay: delay || 2000,
                     disableOnInteraction: false,
                 }}
                 navigation={true}

@@ -8,6 +8,7 @@ type Milestone = {
     description: string;
     image: string[];
     colorClass: string;
+    delay?: number; // Optional delay for the carousel
 }
 
 const milestonesData: Milestone[] = [
@@ -15,12 +16,11 @@ const milestonesData: Milestone[] = [
         id: 1,
         title: "Sự khởi đầu",
         date: "12 Tháng 7, 2000",
-        description: "Vào ngày này, bé Minh Anh được sinh ra, đánh dấu sự bắt đầu của một hành trình đầy hứa hẹn.",
+        description: "Khoảnh khắc em cất tiếng khóc chào đời là lúc vũ trụ thêm một ngôi sao siêu đáng yêu, sáng chói và " +
+            "sẵn sàng làm những điều vĩ đại. Từ giây phút đó, hành trình khám phá thế giới rộng lớn đã chính thức bắt đầu, " +
+            "đánh dấu sự ra đời của một phiên bản độc đáo không ai có thể sao chép!",
         image: [
-            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/my-portfolio/achievements/chika-1.webp',
-            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/my-portfolio/achievements/chika-2.webp',
-            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/my-portfolio/achievements/chika-3.webp',
-            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/my-portfolio/achievements/chika-4.webp'
+            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/hpbd/milestone-1.webp'
         ],
         colorClass: "blue"
     },
@@ -28,12 +28,11 @@ const milestonesData: Milestone[] = [
         id: 2,
         title: "Tuổi 18",
         date: "30 Tháng 5, 2018",
-        description: "We rolled out a critical new feature, significantly enhancing user experience and expanding our capabilities.",
+        description: "tốt nghiệp cấp 3 là khoảnh khắc chính thức \"phá đảo\" một chặng đường đầy ắp kỷ niệm và những bài " +
+            "kiểm tra \"khó nhằn\"! Giờ đây, cánh cửa tương lai đang rộng mở, sẵn sàng chào đón bạn bước vào những cuộc " +
+            "phiêu lưu mới đầy thú vị.",
         image: [
-            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/my-portfolio/achievements/chika-1.webp',
-            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/my-portfolio/achievements/chika-2.webp',
-            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/my-portfolio/achievements/chika-3.webp',
-            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/my-portfolio/achievements/chika-4.webp'
+            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/hpbd/milestone-2.webp'
         ],
         colorClass: "red"
     },
@@ -41,12 +40,11 @@ const milestonesData: Milestone[] = [
         id: 3,
         title: "Tốt nghiệp",
         date: "28 Tháng 8, 2022",
-        description: "Our community reached a new milestone, demonstrating strong engagement and a growing user base.",
+        description: "Hoàn thành đại học là khoảnh khắc bạn chính thức nâng tầm \"level\" bản thân, sẵn sàng chinh phục " +
+            "mọi thử thách của thế giới người lớn! Hãy tận hưởng thành quả của bao đêm thức khuya học bài và những buổi " +
+            "\"deadline dí\" không ngừng nghỉ.",
         image: [
-            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/my-portfolio/achievements/chika-1.webp',
-            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/my-portfolio/achievements/chika-2.webp',
-            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/my-portfolio/achievements/chika-3.webp',
-            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/my-portfolio/achievements/chika-4.webp'
+            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/hpbd/milestone-3.webp'
         ],
         colorClass: "green"
     },
@@ -54,12 +52,13 @@ const milestonesData: Milestone[] = [
         id: 4,
         title: "Gặp gỡ",
         date: "5 Tháng 4, 2024",
-        description: "A significant strategic partnership was formed, opening new avenues for collaboration and growth.",
+        description: "Khoảnh khắc chạm mặt \"người ấy\" lần đầu tiên, tim em chắc hẳn đã \"nhảy múa\" và thế giới bỗng nhiên " +
+            "có thêm một màu hồng rực rỡ! Từ giây phút đó, một câu chuyện tình yêu lãng mạn đã chính thức được viết nên, " +
+            "hứa hẹn bao điều bất ngờ và ngọt ngào.",
         image: [
-            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/my-portfolio/achievements/chika-1.webp',
-            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/my-portfolio/achievements/chika-2.webp',
-            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/my-portfolio/achievements/chika-3.webp',
-            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/my-portfolio/achievements/chika-4.webp'
+            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/hpbd/milestone-41.webp',
+            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/hpbd/milestone-42.webp',
+            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/hpbd/milestone-43.webp'
         ],
         colorClass: "blue"
     },
@@ -67,14 +66,16 @@ const milestonesData: Milestone[] = [
         id: 5,
         title: "Hành trình vẫn sẽ tiếp tục",
         date: "",
-        description: "Our efforts were recognized with a prestigious industry award, celebrating our team's dedication.",
+        description: "Đây có thể là điểm dừng cuối cùng trong \"timeline\" này, nhưng cuộc phiêu lưu của em vẫn chưa kết thúc đâu nhé! " +
+            "Mỗi khoảnh khắc là một trang mới, và những điều tuyệt vời nhất vẫn đang chờ đợi bạn ở phía trước. Hãy cứ vững tin bước tiếp " +
+            "và tạo nên những chương mới rực rỡ hơn nữa!",
         image: [
-            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/my-portfolio/achievements/chika-1.webp',
-            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/my-portfolio/achievements/chika-2.webp',
-            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/my-portfolio/achievements/chika-3.webp',
-            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/my-portfolio/achievements/chika-4.webp'
+            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/hpbd/milestone-51.webp',
+            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/hpbd/milestone-52.webp',
+            'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/hpbd/milestone-53.webp',
         ],
-        colorClass: "purple"
+        colorClass: "purple",
+        delay: 2300
     }
 ];
 
@@ -85,7 +86,7 @@ function Timeline() {
                 <div className="timeline-item">
                     <div className="timeline-content">
                         <div className="image-container">
-                            <Carousel images={milestone.image}/>
+                            <Carousel images={milestone.image} delay={milestone.delay}/>
                         </div>
                         <div className={`text-box ${milestone.colorClass}`}>
                             <h2>{milestone.title}</h2>
