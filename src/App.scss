@@ -7,14 +7,21 @@ body {
   background-color: #F5F5F5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+.main-header {
+  max-width: 40rem;
+  margin: 0 auto 1rem;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   padding: 1rem;
-
-  @media (min-width: 640px) { // sm breakpoint
-    padding: 1.5rem;
-  }
-
-  @media (min-width: 768px) { // md breakpoint
-    padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: .8rem;
+  &:hover {
+    opacity: .8;
+    cursor: pointer;
   }
 }
 
@@ -26,7 +33,7 @@ body {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   border-radius: 0.75rem;
   overflow: hidden;
-  padding: 1.5rem;
+  padding: 1rem;
 
   .divider {
     margin: 2rem 0;
@@ -35,18 +42,16 @@ body {
 }
 
 @media (min-width: 768px) { /* md: */
+  .main-header {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+
   .main-container {
+    padding: 1.5rem;
+
     .divider {
       margin: 3rem 0;
     }
   }
-}
-
-.main-heading {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 800;
-  text-align: center;
-  color: black;
-  margin-bottom: 2rem;
 }

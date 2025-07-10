@@ -1,0 +1,33 @@
+.wish-card {
+  background-color: #f0f4f8;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+
+  .content {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #616161;
+  }
+
+  .sign {
+    font-size: 0.875rem;
+    color: #9E9E9E;
+    margin-top: 0.5rem;
+    text-align: right;
+  }
+}
+
+@media (min-width: 768px) {
+  img {
+    margin-bottom: 1rem;
+  }
+}

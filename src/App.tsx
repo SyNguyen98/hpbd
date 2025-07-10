@@ -1,21 +1,52 @@
 import "./App.scss";
+import {useState} from "react";
+import Avatar from "./component/avatar/Avatar.tsx";
 import CountdownClock from "./component/countdown-clock/CountdownClock.tsx";
 import Timeline from "./component/timeline/Timeline.tsx";
 import {DAY_OF_BIRTH} from "./constants";
+import WishCards from "./component/wish-card/WishCards.tsx";
 
 function App() {
+    const [page, setPage] = useState("info");
+
     return (
-        <div className="main-container">
-            <h1 className="main-heading">
-                Hành Trình
-            </h1>
+        <>
+            <header className="main-header">
+                <div className="page-title"
+                     style={{color: page === "info" ? "#2196F3" : "inherit"}}
+                     onClick={() => setPage("info")}>
+                    Thông Tin
+                </div>
+                <div className="page-title"
+                     style={{color: page === "timeline" ? "#2196F3" : "inherit"}}
+                     onClick={() => setPage("timeline")}>
+                    Dòng Thời Gian
+                </div>
+                <div className="page-title"
+                     style={{color: page === "wishes" ? "#2196F3" : "inherit"}}
+                     onClick={() => setPage("wishes")}>
+                    Lời Chúc
+                </div>
+            </header>
 
-            <CountdownClock startDate={DAY_OF_BIRTH}/>
+            <div className="main-container">
+                {page === "info" && (
+                    <>
+                        <Avatar/>
+                        <CountdownClock startDate={DAY_OF_BIRTH}/>
+                    </>
+                )}
 
-            <hr className="divider" />
+                {page === "timeline" && (
+                    <Timeline/>
+                )}
 
-            <Timeline/>
-        </div>
+                {page === "wishes" && (
+                    <WishCards/>
+                )}
+            </div>
+        </>
+
     );
 }
 
