@@ -1,5 +1,4 @@
 .wish-card {
-  background-color: #f0f4f8;
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -12,6 +11,7 @@
   }
 
   .content {
+    margin: .4rem 0;
     text-align: justify;
     font-size: 1rem;
     line-height: 1.5;
