@@ -106,9 +106,6 @@ function CountdownClock({startDate}: { startDate: string }) {
 
     return (
         <div className="countdown-card">
-            <h1 className="countdown-title">
-                Tuổi
-            </h1>
             <div className="time-grid">
                 {/* Years display */}
                 <div className="time-unit years">
