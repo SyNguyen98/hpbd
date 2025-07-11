@@ -28,7 +28,7 @@ const milestonesData: Milestone[] = [
         id: 2,
         title: "Tuổi 18",
         date: "30 Tháng 5, 2018",
-        description: "tốt nghiệp cấp 3 là khoảnh khắc chính thức \"phá đảo\" một chặng đường đầy ắp kỷ niệm và những bài " +
+        description: "Tốt nghiệp cấp 3 là khoảnh khắc chính thức \"phá đảo\" một chặng đường đầy ắp kỷ niệm và những bài " +
             "kiểm tra \"khó nhằn\"! Giờ đây, cánh cửa tương lai đang rộng mở, sẵn sàng chào đón bạn bước vào những cuộc " +
             "phiêu lưu mới đầy thú vị.",
         image: [
@@ -40,7 +40,7 @@ const milestonesData: Milestone[] = [
         id: 3,
         title: "Tốt nghiệp",
         date: "28 Tháng 8, 2022",
-        description: "Hoàn thành đại học là khoảnh khắc bạn chính thức nâng tầm \"level\" bản thân, sẵn sàng chinh phục " +
+        description: "Hoàn thành đại học là khoảnh khắc chính thức nâng tầm \"level\" bản thân, sẵn sàng chinh phục " +
             "mọi thử thách của thế giới người lớn! Hãy tận hưởng thành quả của bao đêm thức khuya học bài và những buổi " +
             "\"deadline dí\" không ngừng nghỉ.",
         image: [
