@@ -3,8 +3,8 @@ import {useState} from "react";
 import Avatar from "./component/avatar/Avatar.tsx";
 import CountdownClock from "./component/countdown-clock/CountdownClock.tsx";
 import Timeline from "./component/timeline/Timeline.tsx";
-import {DAY_OF_BIRTH} from "./constants";
 import WishCards from "./component/wish-card/WishCards.tsx";
+import {DAY_OF_BIRTH} from "./constants";
 
 function App() {
     const [page, setPage] = useState("info");
