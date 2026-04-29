@@ -1,8 +1,9 @@
 {
-  "name": "minhanh-hpbd",
+  "name": "hpbd",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://minhanh.synguyen.id.vn/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -11,21 +12,21 @@
   },
   "dependencies": {
     "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "sass": "^1.89.2",
-    "swiper": "^11.2.10"
+    "react-dom": "^19.2.5",
+    "sass": "^1.99.0",
+    "swiper": "12.1.2"
   },
   "devDependencies": {
-    "@eslint/js": "^9.29.0",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react": "^4.5.2",
-    "eslint": "^9.29.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "globals": "^16.2.0",
-    "typescript": "~5.8.3",
-    "typescript-eslint": "^8.34.1",
-    "vite": "^7.0.0"
+    "@eslint/js": "^10.0.1",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^10.2.1",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.5.0",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.59.1",
+    "vite": "8.0.5"
   }
 }
