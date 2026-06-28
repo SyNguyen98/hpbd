@@ -13,14 +13,14 @@ const REASONS: Reason[] = [
     {
         id: 1,
         title: 'Nhỏ Nhắn Đáng Iu',
-        text: 'Sự đáng iu gói gọn trong cơ thể 1m54 nên chỉ cần nhìn thôi là muốn che chở rồi.',
+        text: 'Sự đáng iu gói gọn trong cơ thể 1m54 nên chỉ cần nhìn thôi là muốn che chở.',
         img: 'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/hpbd/reason-1.webp',
         size: 'large'
     },
     {
         id: 2,
         title: 'Sự Chu Đáo, Ngọt Ngào',
-        text: 'Cách em luôn quan tâm mỗi khi anh buồn, luôn có những ly nước sâm, những chiếc bánh để động viên tinh thần làm anh thấy ấm áp vô cùng.',
+        text: 'Cách em luôn quan tâm mỗi khi anh buồn, luôn có những ly nước sâm, những chiếc bánh để động viên tinh thần làm anh thấy vô cùng ấm áp.',
         img: 'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/hpbd/reason-2.webp',
         size: 'medium'
     },

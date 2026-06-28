@@ -17,7 +17,7 @@ const MILESTONES: Milestone[] = [
         date: '05/04/2024',
         location: 'Trên Tầng Thượng',
         title: 'Ngày Mình Đến Với Nhau',
-        desc: 'Sau những hôm trò chuyện thâu đêm, ngày ấy anh đã lấy hết can đảm để ngỏ lời yêu em. Bên trên tầng thượng ấy, em đã gật đầu đồng ý sau hàng loạt đắn đo suy nghĩ, mở ra chương mới tràn ngập hạnh phúc trong cuộc đời anh.',
+        desc: 'Sau những hôm trò chuyện thâu đêm, ngày ấy anh đã lấy hết can đảm để ngỏ lời yêu em. Em đã gật đầu đồng ý sau hàng loạt đắn đo suy nghĩ, mở ra chương mới tràn ngập hạnh phúc trong cuộc đời anh.',
         img: 'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/hpbd/timeline-1.webp'
     },
     {
@@ -25,7 +25,7 @@ const MILESTONES: Milestone[] = [
         date: '26/06/2025',
         location: 'Phan Thiết',
         title: 'Chuyến Đi Chơi Xa Đầu Tiên',
-        desc: 'Rời xa sự náo nhiệt của Sài Gòn, hai đứa cùng vi vu đến bãi biển Phan Thiết lộng gió. Quãng đường dài bỗng chốc hóa ngắn ngủi nhờ có tiếng cười nói của em ở sau yên xe. Chuyến đi ấy đã mở ra thật nhiều dặm đường trong tương lai.',
+        desc: 'Rời xa sự náo nhiệt của Sài Gòn, hai đứa cùng vi vu đến bãi biển Phan Thiết lộng gió. Quãng đường dài bỗng chốc hóa ngắn ngủi nhờ tiếng cười nói của em ở sau yên xe. Chuyến đi ấy đã mở ra thật nhiều dặm đường trong tương lai.',
         img: 'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/hpbd/timeline-2.webp'
     },
     {
@@ -41,7 +41,7 @@ const MILESTONES: Milestone[] = [
         date: '29/05/2026',
         location: 'Phú Yên',
         title: 'Vitamin Sea Nơi Miền Trung Nắng Gió',
-        desc: 'Hành trình tìm về xứ sở \'hoa vàng trên cỏ xanh\'. Cùng checkin Gành Đá Đĩa, nơi cực đông ở Mũi Điện và dạo bước trên bãi cát ở Bãi Môn. Phú Yên lộng gió đầy vitamin sea mát lành, nhưng \'vitamin yêu\' từ em mới là thứ làm anh say đắm.',
+        desc: 'Hành trình tìm về xứ sở \'hoa vàng trên cỏ xanh\'. Mình cùng nhau checkin Gành Đá Đĩa, nơi cực đông ở Mũi Điện và dạo bước trên bãi cát ở Bãi Môn. Phú Yên lộng gió đầy vitamin sea mát lành, nhưng \'vitamin yêu\' từ em mới là thứ làm anh say đắm.',
         img: 'https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/hpbd/timeline-4.webp'
     }
 ];

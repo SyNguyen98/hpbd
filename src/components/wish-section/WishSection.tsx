@@ -17,7 +17,7 @@ const WISH_NOTES: WishNote[] = [
     {
         id: 1,
         sender: 'Mẹ của Em',
-        avatar: 'https://api.dicebear.com/7.x/adventurer/svg?seed=mom',
+        avatar: 'https://api.dicebear.com/10.x/adventurer/svg?seed=mom',
         content: 'Chúc con gái yêu của mẹ bước sang tuổi mới luôn xinh đẹp, bình an và hạnh phúc. Hãy luôn mỉm cười con nhé, bố mẹ luôn yêu thương và tự hào về con!',
         tone: 'pink',
         rotation: 2
@@ -25,31 +25,31 @@ const WISH_NOTES: WishNote[] = [
     {
         id: 2,
         sender: 'Anh Người Yêu',
-        avatar: 'https://api.dicebear.com/7.x/adventurer/svg?seed=boyfriend',
+        avatar: 'https://api.dicebear.com/10.x/adventurer/svg?seed=i3oaeue0',
         content: 'Chúc cô gái tháng 7 của anh một ngày sinh nhật ngập tràn niềm vui. Anh hứa sẽ luôn ở bên, yêu thương, che chở và đồng hành cùng em trong mọi chặng đường sắp tới!',
         tone: 'rose',
         rotation: -3
     },
     {
         id: 3,
-        sender: 'Cô bạn thân (Hương)',
-        avatar: 'https://api.dicebear.com/7.x/adventurer/svg?seed=friend1',
+        sender: 'Cô bạn thân (Ân)',
+        avatar: 'https://api.dicebear.com/10.x/adventurer/svg?seed=jakuat4f',
         content: 'Happy Birthday bạn yêu! Chúc bà luôn trẻ trung xinh đẹp như tuổi 18 nhé. Sớm hoàn thành mục tiêu mua nhà, mua xe nha. Bao giờ rảnh phải đi ăn lẩu ăn mừng nha!',
         tone: 'amber',
         rotation: 1
     },
     {
         id: 4,
-        sender: 'Cậu em trai (Duy)',
-        avatar: 'https://api.dicebear.com/7.x/adventurer/svg?seed=brother',
+        sender: 'Bé em (Dương)',
+        avatar: 'https://api.dicebear.com/10.x/adventurer/svg?seed=wa9ga5do',
         content: 'Chúc bà chị khó tính của em sang tuổi mới bớt bớt mắng em lại nha, xinh đẹp hơn và mau dắt anh rể về nhà ăn cơm tiếp ạ. Sinh nhật vui vẻ nha chị hai!',
         tone: 'blue',
         rotation: -2
     },
     {
         id: 5,
-        sender: 'Đồng nghiệp (Mai)',
-        avatar: 'https://api.dicebear.com/7.x/adventurer/svg?seed=colleague',
+        sender: 'Chị Đồng nghiệp (Nguyên)',
+        avatar: 'https://api.dicebear.com/10.x/adventurer/svg?seed=ntj3vowo',
         content: 'Chúc mừng sinh nhật em gái tài năng nhất phòng. Tuổi mới thăng tiến vượt bậc, KPI lúc nào cũng vượt mức và luôn giữ được ngọn lửa rạng ngời này nhé!',
         tone: 'purple',
         rotation: 3

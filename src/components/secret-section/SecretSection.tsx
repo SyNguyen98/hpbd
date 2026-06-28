@@ -1,4 +1,4 @@
-import {type FormEvent, useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Gift, Heart, Lock, Sparkles, Unlock, X} from 'lucide-react';
 import './SecretSection.css';
 
@@ -23,7 +23,7 @@ export default function SecretSection() {
         return () => window.removeEventListener('keydown', handleEscape);
     }, [showSecretModal]);
 
-    const handleUnlock = (event: FormEvent<HTMLFormElement>) => {
+    const handleUnlock = (event: React.SyntheticEvent<HTMLFormElement>) => {
         event.preventDefault();
 
         if (password === '0504') {
@@ -57,8 +57,7 @@ export default function SecretSection() {
 
                     <h2 className="secret-card__title">Thư Mục Mật Của Chúng Ta</h2>
                     <p className="secret-card__description">
-                        Nơi cất giữ bức thư tay dài chứa đựng mọi tâm tư kín đáo, lời thú nhận chân thành và mong ước
-                        tương lai của anh dành cho em.
+                        Nơi cất giữ bức thư mừng sinh nhật chân thành và mong ước tương lai của anh dành cho em.
                     </p>
 
                     {!unlocked ? (
@@ -114,43 +113,43 @@ export default function SecretSection() {
                         </button>
 
                         <div className="secret-modal__header">
-                            <span className="secret-modal__eyebrow">Gửi Công Chúa Nhỏ Của Anh</span>
-                            <h3 className="secret-modal__title">Gửi Em, Cô gái ngọt ngào nhất...</h3>
-                            <p className="secret-modal__subtitle">Đêm tĩnh lặng, viết riêng cho em</p>
+                            <span className="secret-modal__eyebrow">Gửi Em Bé Nhỏ Của Anh</span>
+                            <h3 className="secret-modal__title">Gửi Em, Cô người iu dễ thương</h3>
+                            <p className="secret-modal__subtitle">Gom hết vốn từ vựng, viết riêng cho em</p>
                         </div>
 
                         <div className="secret-modal__body">
-                            <p>Chào cô bé bé nhỏ,</p>
+                            <p>Chào em,</p>
 
                             <p>
-                                Tháng 7 lại về mang theo những cơn mưa ngâu rào rạt và cả nụ cười rạng ngời của em — nụ
-                                cười đã hoàn toàn làm thay đổi cuộc đời anh. Khi anh ngồi gõ những dòng mã này, anh đang
-                                mỉm cười nhớ về từng kỷ niệm nhỏ của hai chúng ta, nhớ về ngày đầu ngượng ngùng trú mưa
-                                cho đến lúc cầm tay dạo quanh bờ cát vàng Phan Thiết.
+                                Tháng 7 lại về mang theo những cơn mưa rào rạt và cả nụ cười tỏa nắng của em — nụ cười
+                                đã làm thay đổi cuộc đời anh. Khi anh ngồi gõ những chữ này, anh đang mỉm cười nhớ về
+                                những kỷ niệm nhỏ của hai ta, nhớ về ngày đầu ngượng ngùng, trăn trở hết sức có nên đồng
+                                ý lời yêu anh không.
                             </p>
 
                             <p>
-                                Anh chưa bao giờ là một người quá khéo ăn khéo nói hay lãng mạn như phim, nhưng anh hứa
-                                sẽ dùng hết sự chân thành và hành động thực tế nhất để che chở cho em. Cảm ơn em vì đã
-                                luôn ở đây, đồng hành, bao dung cho những nét trẻ con vụng về của anh, và là chỗ dựa
-                                tinh thần bình yên nhất của anh sau mỗi ngày làm việc mệt mỏi.
+                                Anh chưa bao giờ là một người quá khéo ăn khéo nói, nhưng anh sẽ dùng hết những hành
+                                động thực tế nhất để che chở cho em. Cảm ơn em vì đã luôn ở đây, đồng hành, bao dung cho
+                                những lần lười biếng của anh, và là chỗ dựa tinh thần bình yên nhất của anh sau mỗi ngày
+                                làm việc mệt mỏi.
                             </p>
 
                             <p>
                                 Bước sang tuổi mới, anh mong em luôn có thật nhiều sức khỏe, luôn được tự do làm những
-                                điều mình thích, luôn yêu đời và nở nụ cười rạng rỡ như ánh mặt trời. Hãy nhớ rằng, bất
-                                kể bầu trời ngoài kia có bão giông thế nào, phía sau em luôn có một bờ vai ấm áp sẵn
-                                sàng che chở cho em.
+                                điều mình thích, luôn yêu đời và nở nụ cười rạng rỡ tựa như ánh dương. Hãy nhớ rằng, bất
+                                kể ngoài kia mọi người có khó khăn với em thế nào, thì phía sau luôn có anh sẵn sàng an
+                                ủi và che chở.
                             </p>
 
                             <p>
-                                Anh chúc em một ngày sinh nhật thật hạnh phúc, ý nghĩa và ngập tràn tình yêu. Anh yêu em
-                                nhiều hơn mọi ngôn từ có thể diễn tả!
+                                Chúc em một ngày sinh nhật thật hạnh phúc, ý nghĩa và ngập tràn tình yêu. Nhớ dẫn anh đi
+                                ăn buffet mừng tổi mới nhé!
                             </p>
                         </div>
 
                         <div className="secret-modal__footer">
-                            <p className="secret-modal__footer-text">Mãi yêu em,</p>
+                            <p className="secret-modal__footer-text">Mãi yêu em ❤️,</p>
                             <p className="secret-modal__signature">Người con trai luôn đứng phía sau em</p>
                         </div>
                     </div>
