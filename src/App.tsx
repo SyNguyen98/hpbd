@@ -3,7 +3,6 @@ import {Heart, Volume2, VolumeX} from 'lucide-react';
 import HeroSection from './components/hero-section/HeroSection';
 import TimelineSection from './components/timeline-section/TimelineSection';
 import ReasonSection from './components/reason-section/ReasonSection';
-import WishSection from './components/wish-section/WishSection';
 import SecretSection from './components/secret-section/SecretSection';
 import './App.css';
 
@@ -35,7 +34,7 @@ export default function App() {
         <div className="birthday-app">
             <audio
                 ref={audioRef}
-                src="https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/hpbd/Mai-Mai-Ben-Nhau.mp3"
+                src="https://cdn.jsdelivr.net/gh/SyNguyen98/image-storage@main/hpbd/mai-mai-ben-nhau.mp3"
                 loop
             />
 
@@ -65,7 +64,7 @@ export default function App() {
 
             <ReasonSection />
 
-            <WishSection />
+            {/*<WishSection />*/}
 
             <SecretSection />
 
